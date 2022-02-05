@@ -24,6 +24,8 @@ nav{
     align-items: center;
     background-color: black;
     min-height: 8vh;
+    width: 147%;
+    margin:-3px;
 }
 .logo{
     color: aliceblue;
@@ -31,6 +33,7 @@ nav{
     letter-spacing: 5px;
     font-size: 22px;
     filter: brightness(100%);
+    margin:-7px;
 }
 .navlinks{
     display:flex;
@@ -43,10 +46,12 @@ nav{
     letter-spacing: 3px;
     font-size: 15px;
     font-weight: bold
-    color=white;}
+    color=white;
+    word-spacing: 10px;}
 
-    .navlinks li {
+.navlinks li {
     list-style:none;
+    word-spacing: 10px;
 }
 .burger div{
 width:25px;
@@ -65,13 +70,13 @@ ul a{
     background-color: red;
 }
 .menbox {
-        width: 876px;
-        height: 829px;
+        width: 1357px;
+        height: 954px;
         background-color: blue;
 }
 .womenbox {
-    width: 867px;
-    height: 829px;
+    width: 1354px;
+    height: 958px;
     background-color: #e8175d;
 }
 .inline{
@@ -93,7 +98,7 @@ ul a{
 }
 @media only screen and (max-width : 784px){
     body{
-        overflow-x: hidden;
+        overflow-x: hdden;
     }
     .navlinks{
         position:absolute;
@@ -127,16 +132,4 @@ ul a{
         opacity: 1;
         transform:translate(0px)
     }
-}
-@media only screen and (max-width : 667px) and (orientation: landscape){
-    .menbox {
-        width: 876px;
-        height: 829px;
-        background-color: blue;
-}
-.womenbox {
-    width: 867px;
-    height: 829px;
-    background-color: #e8175d;
-}
 }
