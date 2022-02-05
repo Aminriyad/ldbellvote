@@ -73,11 +73,15 @@ ul a{
         width: 1357px;
         height: 954px;
         background-color: blue;
+        margin-left: -513px;
+        margin-top: -13px;
 }
 .womenbox {
     width: 1354px;
     height: 958px;
     background-color: #e8175d;
+    margin-left: -513px;
+    margin-top: -13px;
 }
 .inline{
     display: inline;
