@@ -44,7 +44,6 @@ nav{
     justify-content: space-around;
     color: aliceblue;
     margin-left: 3%;
-
 }
 .greybox{
     width: 35rem; 
@@ -55,12 +54,13 @@ nav{
     margin-top: 3%;
 }
 .navlinks a{
-    text-decoration: none;
+    text-decoration:none;
     letter-spacing: 3px;
     font-size: 47px;
     font-weight: bold
     color=white;
-    word-spacing: 10px;}
+    word-spacing: 10px;
+    }
 
 .navlinks li {
     list-style:none;
@@ -77,8 +77,9 @@ cursor:pointer;
 ul a{
     color: rgb(255, 255, 255);
 }
-.four {
+.four:hover {
     font-size: 40px;
+    text-decoration: underline;
 }
 img {
 	max-height:47rem; 

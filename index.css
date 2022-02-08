@@ -79,19 +79,20 @@ ul a{
     background-color: red;
 }
 .redbox{
-    margin-left: -16px; 
-    font-size: 538px;
-    color: white;list-style: none;
-    text-decoration: none;
-    -webkit-text-stroke: 16px black;
-}
-.bluebox{
-    margin-left: -16px; 
+    margin-left: -30px; 
     font-size: 538px;
     color: white;
     list-style: none;
     text-decoration: none;
-    -webkit-text-stroke: 16px black;
+    LETTER-SPACING: -10PX;
+}
+.bluebox{
+    margin-left: -40px; 
+    font-size: 545px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    LETTER-SPACING: -19PX;
 }
 .menbox {
         width: 1357px;
@@ -102,8 +103,9 @@ ul a{
         font-size:507px;
         text-align:center;
         font-size: 483px;
-        margin-top: -92%;
-        padding-top: 59px;
+        margin-top: 5%;
+        padding-top: 75px;
+        -webkit-text-stroke-: 2px solid #0000
 }
 .womenbox {
     width: 1357px;
@@ -113,8 +115,11 @@ ul a{
     margin-top: 6%;
     text-align:center;
     font-size: 483px;
-    margin-top: -85%;
+    margin-top: 7%;
     padding-top: 104px;
+    padding-left: -40px;
+    padding-top: 114px;
+    -webkit-text-stroke: 2px
 }
 .inline{
     display: inline;
