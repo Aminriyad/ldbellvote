@@ -3,7 +3,7 @@
     padding:0px;
     box-sizing:border-box;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}   
+}
 header{
     box-sizing:border-box
 }
@@ -18,7 +18,7 @@ h1{
     width: 36.5rem;
     height: 11rem;
     margin: 20px;
-    background-color: aqua;
+    background-color: black;
     cursor: pointer;
     border-radius: 46px;
     margin-left:5%;
@@ -28,7 +28,7 @@ h1{
     width: 36.5rem;
     height: 11rem;
     margin: 20px;
-    background-color: aqua;
+    background-color: black;
     cursor: pointer;
     border-radius: 46px;
     margin-left:7%;
@@ -64,7 +64,6 @@ nav{
     width: 94%;
     justify-content: space-around;
     color: aliceblue;
-    margin-left: 3%;
 }
 .greybox{
     width: 35rem; 
