@@ -14,6 +14,27 @@ h1{
         margin-right: -359px;
         margin-top: 42px;
 }
+.burger div{
+    width: 36.5rem;
+    height: 11rem;
+    margin: 20px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 46px;
+    margin-left:5%;
+    display: inline-block
+}
+.burger2 div{
+    width: 36.5rem;
+    height: 11rem;
+    margin: 20px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 46px;
+    margin-left:7%;
+    display: inline-block
+
+}
 .h1{
         margin: auto;
         width: 80%;
@@ -66,13 +87,6 @@ nav{
     list-style:none;
     word-spacing: 10px;
     font-size: 40px;
-}
-.burger div{
-width:25px;
-height:3px;
-margin: 5px;
-background-color: aliceblue;
-cursor:pointer;
 }
 ul a{
     color: rgb(255, 255, 255);
