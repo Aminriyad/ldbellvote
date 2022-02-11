@@ -104,8 +104,9 @@ ul a{
         text-align:center;
         font-size: 483px;
         margin-top: 5%;
-        padding-top: 75px;
-        -webkit-text-stroke-: 2px solid #0000
+        padding-top: 79px;
+        -webkit-text-stroke-: 2px solid #0000;
+        border-radius: 150px;
 }
 .womenbox {
     width: 1357px;
@@ -116,10 +117,11 @@ ul a{
     text-align:center;
     font-size: 483px;
     margin-top: 7%;
-    padding-top: 104px;
+    padding-top: 100px;
     padding-left: -40px;
     padding-top: 114px;
-    -webkit-text-stroke: 2px
+    -webkit-text-stroke: 2px;
+    border-radius: 150px;
 }
 .inline{
     display: inline;
