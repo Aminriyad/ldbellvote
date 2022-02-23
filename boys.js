@@ -765,5 +765,252 @@ var myconcat = function(arr1, arr2){
 var myconcat2 = (arr1, arr2) => arr1.concat(arr2);
 console.log(myconcat([1,2],[3,4,5]))
 //write arraw function with parameters
-const realnumberarray = []
+const realnumberarray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+const squarelist = (arr)=>{
+    const squaredinteger = arr.filter(num =>number.isInteger(num)&&num>0).map(x => x * x ),
+    return squaredinteger}
+const squaredinteger = squarelist(realnumberarray);
+console.log(squaredinteger); //come back to it LATER
 //write higher orders arrow functions 
+const increment = (function(){
+    return function increment(number, value = 1) {
+        return number + value; 
+    };
+})();
+console.log(increment(5.2));
+console.log(increment(5)); 
+//writing higher order arrow functions
+const sum = (function(){
+    return function sum(x, y, z){
+        const args = [x,y,z];
+        return args.reduce((a,b) => a+b, 0);
+    };
+})();
+console.log(sum(1,2,3));
+// the above is the same as the one in the buttom
+const sum = (function(){
+    return function sum(...args){
+        return args.reduce((a,b) => a+b, 0);
+    };
+})();// and here we can have any number of arguments
+console.log(sum(1,2,3));
+//the rest operator with function parameters, help create a function with a multiable number of arguments
+const arr1 =["JAN","FEB","MAR","APR","MAY"];
+let arr2 ;
+(function(){
+    arr2 = arr1;
+    arr1[0] = "potato"
+})();
+console.log(arr2)
+//use the spread operator to evaluate arrays in-place
+var voxel = {x: 3.6, y: 7.4, z:6.54};/* this is the perfect way to store things and to store any things from any thing*/
+var x = voxel.x // x= 3.6
+var y = voxel.y // y = 7.4
+var z  = voxel.z // z= 6.54
+
+const {x:a,y:b,z:c} = voxel; // this is the quicker way to assin things form an object into a variable
+const AVG_TEMPERATURE ={
+    today : 77.5,
+    tomorrow : 789
+};
+function gettemp0ftmrw(avgtemperatures){
+    "use strict";
+    const{ tomorrow: temp0ftomorrow }= avgtemperatures;
+    return temp0ftomorrow
+}
+//use destructuring assignment to assign variables from objects
+// come back to this later --------------------------------------------really man you need this----------------------------------------------------------------
+const LOCAL_FORECAST = {
+    today : {min :72, max:83},
+    tomorrow: {min: 73.3, max:84.6}
+};
+function getmaxoftmrw(forecast){
+    "usestrict";
+    const {tomorrow ={max : maxofrtomorrow }}= forecast; //we need curly braces bacause it is nested
+    
+    return maxoftomorrow;
+}
+console.log(getmaxoftmrw(LOCALFORECAST));
+//destruction assignment with nested objects
+//come back to it later --------------------------------------------really man you need this----------------------------------------------------------------
+const [z,x,,y]=[1,2,3,4,5,6];
+console.log(z,x,y);// we'll see 1 2 4
+let a = 8, b=6;
+(() => {
+    "use strict";
+    [a, b]=[b, a]
+})();
+console.log(a)// so we make b = a and a = b
+console.log(b)
+//use destructuring assignment to assign variables form arrays, to assign variables form arrays
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removefirsttwo(list) {
+    const [ , , ...arr] = list// making 2 comas and ask them to do nothing for the first and the second elemant, but everything else in the arr variable 
+    return arr;}
+const arr = removefirsttwo(source);
+console.log(arr);
+console.log(source);
+// the return is going to be a 3-10 in arr and 1-10 in the second because be banned every things else
+const stats ={
+    max: 56.78,
+    standard_deviation: 4.34,
+    median : 34.54,
+    mode : 23.87,
+    min : -0.75,
+    average : 35.85
+};
+const half =(function(){
+    return function half({max , min}){
+        return (max + min)/ 2.0;
+    };
+})();
+console.log(stats);
+console.log(half(stats));
+//use destructuring assignment to pass an object as a function's parameters 
+// use with API calls and you can filter it to make what you want 
+const person ={
+    name :"zodic hadbro", 
+    age : 56
+}
+const greeting = `hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+console.log(greeting) /* any thing inside a c.brethses is java script*/
+const result ={
+    success: ["max-length","no-amd","prefer-arrow-functions"],
+    failure:["no-var","var-on-top","linebreak"],
+    skipped:["id-blacklist","no-up-keys"]
+};
+function makelist(arr){
+    const resultdisplayarray = [];
+    for (let i =0;i<arr.length;i++){
+        resultdisplayarray.push(`<li class="test-warning">${arr[i]}</li>`)
+    }
+    return resultdisplayarray;
+}
+/*
+makelist(result.failure) should return:
+[`<li class="test-warning">no-var</li>`,
+`<li class="test-warning">var-on-top</li>`,
+`<li class="test-warning">linebreak</li>`]
+ */
+const resultdisplayarray = makelist(result.failure);
+console.log(resultdisplayarray)
+//create strings using template leterals 
+//making creating complex strings easier
+//you make them with you front and back teck``
+// ---------working------but---come-back-to-it-later-----------------------------------------------
+const createperson =(name, age, gender) =>{
+    return{// this is an object
+        name: name,
+        age: age,
+        gender: gender
+    };
+};
+console.log(createperson("zodic hasbro", 56, "male"))
+//----make it to----------------------------------------------------------------
+const createperson =(name, age, gender) => ({name, age ,gender})
+console.log(createperson("zodic hasbro", 56, "male"))
+//write concise object literal declarations using simple fields  
+                                                   
+const bicycle ={
+    gear: 2,
+    setgear:function(newgear){
+        "use strict";
+        this.gear = newgear;
+    }
+};
+bicycle.setgear(3);
+console.log(bicycle.gear)
+//-----make to----------------------------------------------------------------\
+const bicycle ={
+    gear: 2,
+    setgear(newgear){
+        "use strict";
+        this.gear = newgear;
+    }
+};
+bicycle.setgear(3);
+console.log(bicycle.gear)
+//write concose declarations functions 
+class spaceshuttle {        
+constructor(targetplanet){
+    this.targetplanet = targetplanet;
+}
+}
+var zeus = new spacehuttle('jupiter');
+console.log(zeus.targetplanet)
+//use class syntax to define a constructor function 
+//------doing the same for the vegtable class---------------------
+function makeclass(){
+    class vegetable{
+        constructor(name){
+            this.name = name;
+        }
+    }
+    return vegetable;
+}
+const vegetable = makeclass();
+const carrot = new vegetable('carrot');
+console.log(carrot.name);
+//--------------------get back to it later---------------------
+//done working in item in it
+class book{
+    constructor(author){
+        this._author = author;
+    }
+    get writer(){
+        return this._author;
+    }
+    set writer(updatedpauthor){
+        this._author = updatedauthor;
+    }
+}
+function makeclass(){
+    class thermostat{
+    constructor(temp){
+        this._temp = 5/9*( temp - 32 )
+    }
+    get temperature(){
+        return this._temp;
+    }
+    set temperature(updatedtemp){
+        this._temp = updatedtemp;
+    }
+    }
+    return thermostat;
+}
+const thermostat = makeclass();
+const thermos =new thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp : thermos.temperature ;
+// done working on 
+//use getters and setters to control access to an object
+// class object youu want to obtain vakues form the object and set  a value from a property from the object
+// get an dset function
+// get the value form the objects provate variieble without the user gettign access to the pricvate variable
+// the private variable is this_.author 
+//----------------------------defentely get back to it later-----------------------------------------------
+import{capitalizestring} from "./string_function"
+const cap = capitalizestring("hello!");
+console.log(cap);
+//---------------in the export side--------------------------------
+export const capitaliizestring = str => str.toupperCase()
+//understand the differeances between import and require
+//now we use import and export the file and importserten function an dserten variable
+const capitalizestring = (string) => {
+    return string.charAt(0).touppercase() + string.slice (1); // this is going to capitralize only the first letter in the string 
+}
+export {capitalizestring};
+
+export const foo = "bar";
+export const bar = "foo";
+//how to use exportto refuse a code block  
+import * as capitalizestrings from "capitalizestrings";//start by import *as
+//hoe to use * to import everything from a file, to import every thing from a file
+export default function substract(x,y) {return x - y;}//fall back often use if you wenat to export only one thing from the file 
+//create an export fallback with export default 
+import subtract from "math_functions"; //only use a c.brakets if they are not default export 
+subtract(7,4);
+//import a default export
+//-------------------------finally done-----------------------------------------------------------------------------------------
