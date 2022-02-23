@@ -2,7 +2,7 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+    font-family:poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
 header{
     box-sizing:border-box
@@ -43,9 +43,8 @@ nav{
     width: 94%;
     justify-content: space-around;
     color: aliceblue;
-    margin-left: 3%;
-
 }
+
 .navlinks a{
     text-decoration: none;
     letter-spacing: 3px;

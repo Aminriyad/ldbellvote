@@ -2,7 +2,7 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 header{
     box-sizing:border-box
@@ -13,6 +13,27 @@ h1{
         border: 3px ;
         margin-right: -359px;
         margin-top: 42px;
+}
+.burger div{
+    width: 36.5rem;
+    height: 11rem;
+    margin: 20px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 46px;
+    margin-left:5%;
+    display: inline-block
+}
+.burger2 div{
+    width: 36.5rem;
+    height: 11rem;
+    margin: 20px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 46px;
+    margin-left:7%;
+    display: inline-block
+
 }
 .h1{
         margin: auto;
@@ -43,35 +64,41 @@ nav{
     width: 94%;
     justify-content: space-around;
     color: aliceblue;
-    margin-left: 3%;
-
+}
+.greybox{
+    width: 35rem; 
+    height:14rem; 
+    background-color: gray;
+    margin-left: 6%;
+    border-radius: 42px;
+    margin-top: 3%;
 }
 .navlinks a{
-    text-decoration: none;
+    text-decoration:none;
     letter-spacing: 3px;
     font-size: 47px;
     font-weight: bold
     color=white;
-    word-spacing: 10px;}
+    word-spacing: 10px;
+    }
 
 .navlinks li {
     list-style:none;
     word-spacing: 10px;
     font-size: 40px;
 }
-.burger div{
-width:25px;
-height:3px;
-margin: 5px;
-background-color: aliceblue;
-cursor:pointer;
-}
 ul a{
     color: rgb(255, 255, 255);
 }
-.four {
+.four:hover {
     font-size: 40px;
+    text-decoration: underline;
 }
+img {
+	max-height:47rem; 
+    max-width:35rem;
+    border: 2px solid #aaa
+    }
 .box{
     border: 5px solid blue;
     width: 390px;
