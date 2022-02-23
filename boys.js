@@ -714,5 +714,56 @@ console.log(checksign(-10))
 same variable twicw and it'll give you a  note*/
 // an dvar ian going globaly an dlocally if inside a fraction.  
 //compare scopes of the var and let keywords
-
-//how to declare read-only variable with the const keyword
+function printmany(str) {
+    "use strict";
+    var sentence = str + "is cool!"
+    sentence = str + "is amazing!"
+    for (var i=0; i<str.length; i+=2){
+        console.log(sentence);
+    }
+};
+printManyTimes("freecodecamp");
+//how to declare read-only variable with the const keyword\
+//consot is ucangeable and use it if you are sure that you'll not change it again and mostle you will
+const s=[5, 7, 2];
+function editinplace() {
+    "use strict";
+    s[0]=2;
+    s[1]=5;
+    s[2]=7;
+}
+editinplace();
+console.log(s)
+//mutate an arry declared with const
+//you cant change a const linking but you can change the array that it is linked to.
+function freezeObj(){
+    "use strict";
+    const MATH_CONSTANTS = {
+    PI: 3.14
+    };
+    object.freeze(MATH_CONSTANTS)/*usiung object.freeze is going to block every thing that you want 
+    and is going to make it unchangeable and in the same way it can change const*/
+    try {
+    MATH_CONSTANTS.PI= 99;
+    } catch(ex){
+    console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);
+//prevent object mutation
+magic = () =>new Date();
+/*----------is the same thing as this----------*/
+var magic = function() {
+    return new date();
+};
+//using arrow function to write concise anonymous functions 
+var myconcat = function(arr1, arr2){
+    return arr1.concat(arr2)}
+//we converted the above to an arrow function
+var myconcat2 = (arr1, arr2) => arr1.concat(arr2);
+console.log(myconcat([1,2],[3,4,5]))
+//write arraw function with parameters
+const realnumberarray = []
+//write higher orders arrow functions 
