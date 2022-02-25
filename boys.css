@@ -18,7 +18,8 @@ h1{
     width: 36.5rem;
     height: 11rem;
     margin: 20px;
-    background-color: black;
+    background-color:#808080
+    ;
     cursor: pointer;
     border-radius: 46px;
     margin-left:5%;
@@ -28,7 +29,7 @@ h1{
     width: 36.5rem;
     height: 11rem;
     margin: 20px;
-    background-color: black;
+    background-color:#808080;
     cursor: pointer;
     border-radius: 46px;
     margin-left:7%;
